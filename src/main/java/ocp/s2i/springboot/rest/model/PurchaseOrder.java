@@ -101,6 +101,7 @@ public class PurchaseOrder {
     public Float getDiscountAmount() {
 	return ( (this.price * this.quantity) * ( Float.parseFloat(this.dcode) / 100 ) );
     } 
+    
 
     public Float getOrderTotal() {
 	return ( (this.price * this.quantity) - getDiscountAmount() );
